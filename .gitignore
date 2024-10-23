@@ -1,0 +1,21 @@
+# this file locks the provider (plugin) version. created when `terraform init` is run
+# other team members code wont break 
+# doesnt contain sensitive files
+# doesnt need to be git ignoredd
+# .terraform.lock.hcl
+
+# just to avoid bloat nothing sensitive in here
+.terraform/
+
+# most important to protect (contains creds for terraform)
+terraform.tfstate
+terraform.tfstate.backup
+
+# variables file certain variables you can
+*.tfvars
+*.auto.tfvars
+variable.tf
+
+# override files
+override.tf  
+override.tf.json 
